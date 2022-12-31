@@ -1,0 +1,50 @@
+campground_name,campground_id,campsite_name,price_usd,booking_id,start_date,end_date,status,user_email
+Bicentennial Campground,1,Campsite of Mischief and Mayhem,10,1,2022-01-01T00:00:00.000Z,2022-01-06T00:00:00.000Z,paid,user1@example.com1
+Bicentennial Campground,1,Campsite of the Chocolate Fountain,105,3,2024-01-01T00:00:00.000Z,2024-01-06T00:00:00.000Z,paid,user1@example.com3
+Bicentennial Campground,1,Campsite of the Crazy Costumes,50,2,2023-01-01T00:00:00.000Z,2023-01-06T00:00:00.000Z,paid,user1@example.com2
+Boundary Creek Campground,2,Campsite of the Endless Dance Party,10,8,2029-01-01T00:00:00.000Z,2029-01-06T00:00:00.000Z,paid,user1@example.com8
+Boundary Creek Campground,2,Campsite of the Endless Karaoke,60,4,2025-01-01T00:00:00.000Z,2025-01-06T00:00:00.000Z,paid,user1@example.com4
+Boundary Creek Campground,2,Campsite of the Endless Marshmallow Roast,160,6,2027-01-01T00:00:00.000Z,2027-01-06T00:00:00.000Z,paid,user1@example.com6
+Boundary Creek Campground,2,Campsite of the Endless Story Time,20,5,2026-01-01T00:00:00.000Z,2026-01-06T00:00:00.000Z,paid,user1@example.com5
+Boundary Creek Campground,2,Campsite of the Endless Talent Show,85,7,2028-01-01T00:00:00.000Z,2028-01-06T00:00:00.000Z,paid,user1@example.com7
+Brandy Creek Primitive Campground,3,Campsite of the Endless Water Balloon Fight,10,10,2031-01-01T00:00:00.000Z,2031-01-06T00:00:00.000Z,paid,user1@example.com10
+Brandy Creek Primitive Campground,3,Campsite of the Epic Nerf Gun Battle,80,9,2030-01-01T00:00:00.000Z,2030-01-06T00:00:00.000Z,paid,user1@example.com9
+Bunker Hill Campground,4,Campsite of the Eternal Scavenger Hunt,5,14,2035-01-01T00:00:00.000Z,2035-01-06T00:00:00.000Z,paid,user1@example.com14
+Bunker Hill Campground,4,Campsite of the Fanciful Face Painting,35,13,2034-01-01T00:00:00.000Z,2034-01-06T00:00:00.000Z,paid,user1@example.com13
+Bunker Hill Campground,4,Campsite of the Magic Tricks,65,11,2032-01-01T00:00:00.000Z,2032-01-06T00:00:00.000Z,paid,user1@example.com11
+Bunker Hill Campground,4,Campsite of the Mischievous Monkeys,15,12,2033-01-01T00:00:00.000Z,2033-01-06T00:00:00.000Z,paid,user1@example.com12
+Bunker Hill Campground,4,Campsite of the Muddy Puddles,20,15,2036-01-01T00:00:00.000Z,2036-01-06T00:00:00.000Z,paid,user1@example.com15
+Canton Creek Campground,5,Campsite of the Perpetual Bonfire,11,20,2041-01-01T00:00:00.000Z,2041-01-06T00:00:00.000Z,paid,user1@example.com20
+Canton Creek Campground,5,Campsite of the S'morest Place on Earth,19,18,2039-01-01T00:00:00.000Z,2039-01-06T00:00:00.000Z,paid,user1@example.com18
+Canton Creek Campground,5,Campsite of the Sassy Sack Race,150,16,2037-01-01T00:00:00.000Z,2037-01-06T00:00:00.000Z,paid,user1@example.com16
+Canton Creek Campground,5,Campsite of the Sassy Scavenger Hunt,65,17,2038-01-01T00:00:00.000Z,2038-01-06T00:00:00.000Z,paid,user1@example.com17
+Canton Creek Campground,5,Campsite of the Silly Hat Party,20,19,2040-01-01T00:00:00.000Z,2040-01-06T00:00:00.000Z,paid,user1@example.com19
+Cookson Lake Dispersed Campsite,6,Campsite of the Silly Sing-Along,10,24,2045-01-01T00:00:00.000Z,2045-01-06T00:00:00.000Z,paid,user1@example.com24
+Cookson Lake Dispersed Campsite,6,Campsite of the Silly String Wars,15,22,2043-01-01T00:00:00.000Z,2043-01-06T00:00:00.000Z,paid,user1@example.com22
+Cookson Lake Dispersed Campsite,6,Campsite of the Singing Kettle,39,25,2046-01-01T00:00:00.000Z,2046-01-06T00:00:00.000Z,paid,user1@example.com25
+Cookson Lake Dispersed Campsite,6,Campsite of the Soggy Bottom Boys,75,21,2042-01-01T00:00:00.000Z,2042-01-06T00:00:00.000Z,paid,user1@example.com21
+Cookson Lake Dispersed Campsite,6,Campsite of the Wacky Water Games,100,23,2044-01-01T00:00:00.000Z,2044-01-06T00:00:00.000Z,paid,user1@example.com23
+Council Lake Dispersed Campsite,7,Campsite of the Wacky Watermelon Seed Spitting Contest,14,26,2047-01-01T00:00:00.000Z,2047-01-06T00:00:00.000Z,paid,user1@example.com26
+Council Lake Dispersed Campsite,7,The Cheeky Camp,85,28,2049-01-01T00:00:00.000Z,2049-01-06T00:00:00.000Z,paid,user1@example.com28
+Council Lake Dispersed Campsite,7,The Chirpy Chalet,11,27,2048-01-01T00:00:00.000Z,2048-01-06T00:00:00.000Z,paid,user1@example.com27
+Council Lake Dispersed Campsite,7,The Chirpy Chalet,36,29,2050-01-01T00:00:00.000Z,2050-01-06T00:00:00.000Z,paid,user1@example.com29
+Cove Campground,8,The Chuckle-Worthy Clearing,27,32,2053-01-01T00:00:00.000Z,2053-01-06T00:00:00.000Z,paid,user1@example.com32
+Cove Campground,8,The Funky Forest,550,30,2051-01-01T00:00:00.000Z,2051-01-06T00:00:00.000Z,paid,user1@example.com30
+Cove Campground,8,The Giggly Glade,100,33,2054-01-01T00:00:00.000Z,2054-01-06T00:00:00.000Z,paid,user1@example.com33
+Cove Campground,8,The Great Outdoorsy-Pants,85,31,2052-01-01T00:00:00.000Z,2052-01-06T00:00:00.000Z,paid,user1@example.com31
+Crook Campground,9,The Happy Camper's Retreat,34,34,2055-01-01T00:00:00.000Z,2055-01-06T00:00:00.000Z,paid,user1@example.com34
+Crook Campground,9,The Happy Hamlet,30,35,2056-01-01T00:00:00.000Z,2056-01-06T00:00:00.000Z,paid,user1@example.com35
+Desolation Gray Canyons Screen Cabins,10,The Mischievous Meadow,37,36,2057-01-01T00:00:00.000Z,2057-01-06T00:00:00.000Z,paid,user1@example.com36
+Desolation Gray Canyons Screen Cabins,10,The Peppy Paddock,32,38,2059-01-01T00:00:00.000Z,2059-01-06T00:00:00.000Z,paid,user1@example.com38
+Desolation Gray Canyons Screen Cabins,10,The Playful Patch,580,39,2060-01-01T00:00:00.000Z,2060-01-06T00:00:00.000Z,paid,user1@example.com39
+Desolation Gray Canyons Screen Cabins,10,The Playful Plains,170,37,2058-01-01T00:00:00.000Z,2058-01-06T00:00:00.000Z,paid,user1@example.com37
+Duck Harbor Campground,11,The Quirky Quarry,200,40,2061-01-01T00:00:00.000Z,2061-01-06T00:00:00.000Z,paid,user1@example.com40
+Duck Harbor Campground,11,The Sassy Site,27,42,2063-01-01T00:00:00.000Z,2063-01-06T00:00:00.000Z,paid,user1@example.com42
+Duck Harbor Campground,11,The Silly Sanctuary,80,44,2065-01-01T00:00:00.000Z,2065-01-06T00:00:00.000Z,paid,user1@example.com44
+Duck Harbor Campground,11,The Snuggly Site,150,43,2064-01-01T00:00:00.000Z,2064-01-06T00:00:00.000Z,paid,user1@example.com43
+Duck Harbor Campground,11,The Spunky Spot,22,41,2062-01-01T00:00:00.000Z,2062-01-06T00:00:00.000Z,paid,user1@example.com41
+Fishermans Group,12,The Tent of Many Colors,10,48,2069-01-01T00:00:00.000Z,2069-01-06T00:00:00.000Z,paid,user1@example.com48
+Fishermans Group,12,The Tipsy Tent,65,46,2067-01-01T00:00:00.000Z,2067-01-06T00:00:00.000Z,paid,user1@example.com46
+Fishermans Group,12,The Whimsical Wilderness,5,45,2066-01-01T00:00:00.000Z,2066-01-06T00:00:00.000Z,paid,user1@example.com45
+Fishermans Group,12,The Whimsical Woodland,79,47,2068-01-01T00:00:00.000Z,2068-01-06T00:00:00.000Z,paid,user1@example.com47
+Fox Creek Horse Camp,13,The Zany Zone,109,49,2070-01-01T00:00:00.000Z,2070-01-06T00:00:00.000Z,paid,user1@example.com49

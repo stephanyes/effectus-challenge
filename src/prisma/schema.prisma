@@ -1,0 +1,39 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Campground {
+  id          Int        @id @default(autoincrement())
+  name        String     @unique
+  campsites   Campsite[]
+  bookedDates DateTime[]
+  priceMin    Int?
+  priceMax    Int?
+}
+
+model Campsite {
+  id           Int        @id @default(autoincrement())
+  name         String     @unique
+  price        Int
+  campground   Campground @relation(fields: [campgroundId], references: [id])
+  campgroundId Int
+  bookings     Booking[]
+}
+
+model Booking {
+  id         Int      @id @default(autoincrement())
+  start_date DateTime
+  end_date   DateTime
+  status     String   @default("paid")
+  user_email String   @unique
+  campsite   Campsite @relation(fields: [campsiteId], references: [id])
+  campsiteId Int
+}

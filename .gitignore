@@ -1,0 +1,36 @@
+# .env files
+.env
+
+# .env.test files
+.env.test
+
+# node_modules directories
+node_modules
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+tsconfig.tsbuildinfo
+
+
+# Build artifacts
+build/
+dist/
+
+# Editor backup files
+*~
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Visual Studio Code settings files
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
