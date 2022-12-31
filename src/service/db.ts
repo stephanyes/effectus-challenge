@@ -1,6 +1,21 @@
-import { Booking, Campground, Campsite } from "@prisma/client";
+import { Booking } from "@prisma/client";
 import { prisma } from "../prisma";
 import sendMail from "../utils/sendMail";
+
+type Campground = {
+  id: string;
+  name: string;
+  bookedDates: Date[];
+  priceMin: string;
+  priceMax: string;
+};
+
+type Campsite = {
+  id: string;
+  name: string;
+  price: string;
+  campgroundId: string;
+};
 
 // Campground
 export const getAllCampgrounds = async () => {
@@ -19,6 +34,8 @@ export const createCampground = async (data: Campground) => {
   return await prisma.campground.create({
     data: {
       name: data.name,
+      priceMin: parseInt(data.priceMin),
+      priceMax: parseInt(data.priceMax),
     },
   });
 };
@@ -57,8 +74,8 @@ export const createCampsite = async (data: Campsite) => {
   return await prisma.campsite.create({
     data: {
       name: data.name,
-      price: data.price,
-      campground: { connect: { id: data.campgroundId } },
+      price: parseInt(data.price),
+      campground: { connect: { id: parseInt(data.campgroundId) } },
     },
   });
 };
@@ -68,8 +85,8 @@ export const updateCampsite = async (id: string, data: Campsite) => {
     where: { id: parseInt(id) },
     data: {
       name: data.name,
-      price: data.price,
-      campground: { connect: { id: data.campgroundId } },
+      price: parseInt(data.price),
+      campground: { connect: { id: parseInt(data.campgroundId) } },
     },
   });
 };
@@ -163,7 +180,6 @@ export const getBookingsByCampsiteAndDates = async (
   startDate: any, // should be string buy using any because of ts TODO
   endDate: any
 ) => {
-
   const booking = await prisma.booking.findMany({
     where: {
       campsiteId: parseInt(campsiteId),
@@ -172,13 +188,6 @@ export const getBookingsByCampsiteAndDates = async (
   });
 
   return booking;
-};
-
-export const getBookingsByCampsiteId = async (id: string) => {
-  const bookings = await prisma.booking.findMany({
-    where: { campsiteId: parseInt(id) },
-  });
-  return bookings;
 };
 
 export const sendNotificationEmail = async (bookingId: string) => {
