@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "8cb2bcd2-8794-43cd-abc1-e03476e39ed2",
+		"name": "Effectus-Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7375383"
+	},
+	"item": [
+		{
+			"name": "Bookings",
+			"item": [
+				{
+					"name": "http://localhost:3000/bookings/campsites/3/dates/2023-12-30T19:54:17.197Z/2024-04-02T19:54:17.198Z",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/bookings/campsites/3/dates/2023-12-30T19:54:17.197Z/2024-04-02T19:54:17.198Z",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bookings",
+								"campsites",
+								"3",
+								"dates",
+								"2023-12-30T19:54:17.197Z",
+								"2024-04-02T19:54:17.198Z"
+							]
+						},
+						"description": "Get all bookings from a specified startData and endDate for that specific campsite"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/bookings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "campsiteId",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "2023-03-30T19:54:17.198Z",
+									"type": "text"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-04-30T19:54:17.198Z",
+									"type": "text"
+								},
+								{
+									"key": "userEmail",
+									"value": "user22@postmanmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bookings"
+							]
+						},
+						"description": "Post a booking"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Campground",
+			"item": [
+				{
+					"name": "http://localhost:3000/campgrounds",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/campgrounds",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campgrounds"
+							]
+						},
+						"description": "Get all campgrounds"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/campgrounds/order?order=asc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/campgrounds/order?order=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campgrounds",
+								"order"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						},
+						"description": "Get list of Campgrounds order by asc or desc "
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/campgrounds/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/campgrounds/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campgrounds",
+								"1"
+							]
+						},
+						"description": "Get campground by id"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/campgrounds/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "CAMPGROUND POSTMAN",
+									"type": "text"
+								},
+								{
+									"key": "priceMin",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "priceMax",
+									"value": "169",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/campgrounds/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campgrounds",
+								""
+							]
+						},
+						"description": "Create a Campground"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/campgrounds/18",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "CAMPGROUND MODIFIED FROM POSTMAN",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/campgrounds/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campgrounds",
+								"18"
+							]
+						},
+						"description": "Update the campground name"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/campgrounds/15",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "\"This comes from Postman 123123123\"",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/campgrounds/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campgrounds",
+								"18"
+							]
+						},
+						"description": "Delete campground by :id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Campsite",
+			"item": [
+				{
+					"name": "http://localhost:3000/campsites",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/campsites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campsites"
+							]
+						},
+						"description": "Get list of all campsites"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/campsites/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/campsites/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campsites",
+								"5"
+							]
+						},
+						"description": "Get campsite by id"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/campsites/38",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Yellowstone Campsite",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "120938",
+									"type": "text"
+								},
+								{
+									"key": "campgroundId",
+									"value": "17",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/campsites/38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campsites",
+								"38"
+							]
+						},
+						"description": "Update campsite"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/campsites",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Campsite from the FUTURE POSTMAN",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "569",
+									"type": "text"
+								},
+								{
+									"key": "campgroundId",
+									"value": "17",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/campsites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campsites"
+							]
+						},
+						"description": "Create a campsite"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/campsites/38",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/campsites/38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campsites",
+								"38"
+							]
+						},
+						"description": "Delete campsite by id"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
