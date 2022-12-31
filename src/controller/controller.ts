@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import * as service from "../service/db";
 import { prisma } from "../prisma";
 
-// Campgrounds
+// Campgrounds CRUD
 export const getCampgroundsByPrice = async (req: Request, res: Response) => {
   try {
     const { order } = req.query;
@@ -73,7 +73,7 @@ export const deleteCampground = async (req: Request, res: Response) => {
   }
 };
 
-// Campsites
+// Campsites CRUD
 export const getAllCampsites = async (req: Request, res: Response) => {
   try {
     const campsites = await service.getAllCampsites();
@@ -122,7 +122,7 @@ export const deleteCampsite = async (req: Request, res: Response) => {
   }
 };
 
-// Bookings
+// Bookings - Create booking and get bookings by campsite and dates
 export const getBookingsByCampsiteAndDates = async (
   req: Request,
   res: Response
@@ -156,12 +156,3 @@ export const createBooking = async (req: Request, res: Response) => {
   }
 };
 
-export const getBookingsByCampsiteId = async (req: Request, res: Response) => {
-  try {
-    const { id } = req.params;
-    const bookings = await service.getBookingsByCampsiteId(id);
-    res.json(bookings);
-  } catch (err) {
-    res.status(500).send(err.message);
-  }
-};
